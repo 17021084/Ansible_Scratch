@@ -70,7 +70,8 @@ open this file by ```vim``` and set ``` PermitRootLogin yes``` save and quit ```
 1. Test connection via ```ping```.
  from  ansible_master ping to normarlos ``` ping <ipv4 of normal os> ```
 
-2. Remote normalos via ```ssh``` :
+2. Remote normalos via ```ssh```. <br>
+Make sure in remoted machine. ```ssh``` service is opening.
 ```ssh  <username>@<ipv4 of normalos>```
 ex: ipv4 of normalos is ```172.17.0.3``` :  ```ssh  root@172.17.0.3``` <br> 
 _logout remote :```logout```_
