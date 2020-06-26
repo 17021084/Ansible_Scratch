@@ -1,0 +1,12 @@
+--- 
+    - hosts: machine
+      remote_user: root 
+      become: yes                     # prevent password required prompt
+      become_method: sudo             # overrides the default method set in
+      tasks:    
+        - name: clone from github
+          git:
+            repo: https://github.com/17021084/Geo-Chi-Ri.git
+            dest: /home/testpull
+            force: yes
+           
